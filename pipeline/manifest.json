@@ -1,0 +1,972 @@
+{
+  "tex_wood": {
+    "kind": "image",
+    "taskId": 8337875,
+    "status": "done",
+    "createdAt": 1795018279773,
+    "params": {
+      "prompt": "Seamless tileable square texture filling the whole frame: warm honey-coloured oak wood planks with clear grain lines and small knots, evenly lit, flat top-down view, no objects, no perspective, no shadows."
+    },
+    "raw": [
+      "https://qhmtl-cos.kujiale.com/materialtexture/70b/173/afbb86b3b38232e90a51ef354111e595bdd813e.jpg"
+    ],
+    "urls": {
+      "image": "https://qhmtl-cos.kujiale.com/materialtexture/70b/173/afbb86b3b38232e90a51ef354111e595bdd813e.jpg"
+    },
+    "urlsAt": 1795018330345,
+    "seconds": 51,
+    "files": {
+      "image": "pipeline/cache/tex_wood/image.jpg"
+    }
+  },
+  "obj_block": {
+    "kind": "text3d",
+    "taskId": 8337876,
+    "status": "done",
+    "createdAt": 1795018279819,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Heavy cube block of ancient sandstone with chipped bevelled edges, a few hairline cracks and one shallow engraved ring on each side face, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/dbb51c759c8f4f159d98adccdc564441/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/dbb51c759c8f4f159d98adccdc564441/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795018468405,
+    "seconds": 189,
+    "files": {
+      "glb": "pipeline/cache/obj_block/glb.glb"
+    }
+  },
+  "tex_stone": {
+    "kind": "image",
+    "taskId": 8337874,
+    "status": "done",
+    "createdAt": 1795018279954,
+    "params": {
+      "prompt": "Seamless tileable square texture filling the whole frame: rough grey granite stone with fine speckles, thin cracks and a little green moss, evenly lit, flat top-down view, no objects, no perspective, no shadows."
+    },
+    "raw": [
+      "https://qhmtl-cos.kujiale.com/materialtexture/3a4/0fe/bb09a943a919c728ef6d9acaa9a7965c4014d261.jpg"
+    ],
+    "urls": {
+      "image": "https://qhmtl-cos.kujiale.com/materialtexture/3a4/0fe/bb09a943a919c728ef6d9acaa9a7965c4014d261.jpg"
+    },
+    "urlsAt": 1795018318184,
+    "seconds": 38,
+    "files": {
+      "image": "pipeline/cache/tex_stone/image.jpg"
+    }
+  },
+  "obj_block_wood": {
+    "kind": "material",
+    "taskId": 8338277,
+    "status": "done",
+    "createdAt": 1795018471892,
+    "params": {
+      "meshUrl": "@obj_block.glb",
+      "img": "@tex_wood.image",
+      "version": "v3.0-standard",
+      "outputFormat": [
+        "glb"
+      ]
+    },
+    "raw": [
+      "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658638822/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795018702%3B1795025902%26q-key-time%3D1795018702%3B1795025902%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3De32e33b1d9aec64ba1db64f448c5a9f381cb92aa",
+      "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/fdfa773f61a740189e47c8be8d1a4d3c/textured.glb",
+      "NOT_REQUESTED",
+      "NOT_REQUESTED",
+      "NOT_REQUESTED"
+    ],
+    "urls": {
+      "zip": "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658638822/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795018702%3B1795025902%26q-key-time%3D1795018702%3B1795025902%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3De32e33b1d9aec64ba1db64f448c5a9f381cb92aa",
+      "glb": "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/fdfa773f61a740189e47c8be8d1a4d3c/textured.glb"
+    },
+    "urlsAt": 1795018712307,
+    "seconds": 240,
+    "files": {
+      "glb": "pipeline/cache/obj_block_wood/glb.glb"
+    }
+  },
+  "world_hall": {
+    "kind": "world",
+    "taskId": "3FO4K4V9AMEO",
+    "status": "done",
+    "createdAt": 1795018766804,
+    "params": {
+      "name": "Matterborn - The Hollow Atelier",
+      "prompt": "A vast ancient stone sculpture workshop hall carved inside a mountain, tall arched windows with beams of golden dusk light, floating dust, giant unfinished statues, wooden scaffolding, warm and mysterious"
+    },
+    "worldStatus": "SUCCEEDED",
+    "urls": {
+      "ply": "https://holo-cos.aholo3d.cn/spatial-gen-3dgs/3FO4FNYQBW29/aholo/output/942c3d2fa8344186874a1f41fff74342-003001-4a1a_MaaSReportFile-6bdc96a8a8385a22b4890d1ff98a0f99.ply",
+      "spz": "https://holo-cos.aholo3d.cn/splat-transform/3FO4FNYQBW29/format/d40d201069c74ff6961c852e02a18c09.spz",
+      "lod": "https://holo-cos.aholo3d.cn/splat-transform/3FO4FNYQBW29/1795019730/lod-meta.json",
+      "pano": "https://holo-cos.aholo3d.cn/spatial-gen-3dgs/3FO4FNYQBW29/aholo/output/942c3d2fa8344186874a1f41fff74342-003001-4a1a_MaaSReportFile-0fe4854c70981e1788095e0339c502f9.jpg"
+    },
+    "upAxis": "Z",
+    "seconds": 982,
+    "files": {
+      "spz": "pipeline/cache/world_hall/spz.spz",
+      "lod": "pipeline/cache/world_hall/lod.json",
+      "pano": "pipeline/cache/world_hall/pano.jpg"
+    }
+  },
+  "world_valley": {
+    "kind": "world",
+    "taskId": "3FO4K4V98SV5",
+    "status": "done",
+    "createdAt": 1795018766805,
+    "params": {
+      "name": "Matterborn - Valley of Makers",
+      "prompt": "A misty mountain valley at twilight with ruined stone towers, ancient aqueducts and glowing amber lanterns, painterly fantasy atmosphere"
+    },
+    "worldStatus": "SUCCEEDED",
+    "urls": {
+      "ply": "https://holo-cos.aholo3d.cn/spatial-gen-3dgs/3FO4FNYQBW29/aholo/output/3969d8e194ce47c39b54d77a5c1b9b90-004236-4a41_MaaSReportFile-6bdc96a8a8385a22b4890d1ff98a0f99.ply",
+      "spz": "https://holo-cos.aholo3d.cn/splat-transform/3FO4FNYQBW29/format/fadb7e7859684441b9d929431729e184.spz",
+      "lod": "https://holo-cos.aholo3d.cn/splat-transform/3FO4FNYQBW29/1795020459/lod-meta.json",
+      "pano": "https://holo-cos.aholo3d.cn/spatial-gen-3dgs/3FO4FNYQBW29/aholo/output/3969d8e194ce47c39b54d77a5c1b9b90-004236-4a41_MaaSReportFile-0fe4854c70981e1788095e0339c502f9.jpg"
+    },
+    "upAxis": "Z",
+    "seconds": 1712,
+    "files": {
+      "spz": "pipeline/cache/world_valley/spz.spz",
+      "lod": "pipeline/cache/world_valley/lod.json",
+      "pano": "pipeline/cache/world_valley/pano.jpg"
+    }
+  },
+  "env_kiln": {
+    "kind": "text3d",
+    "taskId": 8339035,
+    "status": "done",
+    "createdAt": 1795018767051,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Giant ancient stone kiln furnace with a round arched mouth, cold and cracked, soot stains, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/eb743b7c94424874b981616cebeff867/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/eb743b7c94424874b981616cebeff867/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795018905450,
+    "seconds": 138,
+    "files": {
+      "glb": "pipeline/cache/env_kiln/glb.glb"
+    }
+  },
+  "env_workbench": {
+    "kind": "text3d",
+    "taskId": 8339039,
+    "status": "done",
+    "createdAt": 1795018767210,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Sturdy old wooden workbench with thick legs, a wooden mallet and one unfinished clay pot on top, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/1d8cf6df036649f694fe5199eeef9327/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/1d8cf6df036649f694fe5199eeef9327/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795018868588,
+    "seconds": 101,
+    "files": {
+      "glb": "pipeline/cache/env_workbench/glb.glb"
+    }
+  },
+  "hero_concept": {
+    "kind": "image",
+    "taskId": 8339043,
+    "status": "done",
+    "createdAt": 1795018767318,
+    "params": {
+      "prompt": "Full-body character concept art of Loam, a small friendly humanoid golem made of smooth terracotta clay. Big rounded head (about one quarter of its height) with a very simple face: two round glowing amber eyes, no mouth, no nose. A small glowing amber crystal heart set in the chest, sturdy legs, simple rounded hands, arms clearly separated from the torso, smooth surfaces with no carvings. Standing straight in an A-pose with arms angled 45 degrees away from the body, legs slightly apart, facing the camera, orthographic front view, entire body visible from head to feet, plain flat light-grey background, soft even lighting, stylized hand-painted game character, clean silhouette."
+    },
+    "raw": [
+      "https://qhmtl-cos.kujiale.com/materialtexture/3e8/666/6e0d10a8c881f6cb835f325c21e91b278e66db8.jpg"
+    ],
+    "urls": {
+      "image": "https://qhmtl-cos.kujiale.com/materialtexture/3e8/666/6e0d10a8c881f6cb835f325c21e91b278e66db8.jpg"
+    },
+    "urlsAt": 1795018805407,
+    "seconds": 38,
+    "files": {
+      "image": "pipeline/cache/hero_concept/image.jpg"
+    }
+  },
+  "cr_colossus": {
+    "kind": "text3d",
+    "taskId": 8339045,
+    "status": "done",
+    "createdAt": 1795018767332,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 50000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Huge hunched ancient clay colossus guardian with heavy arms, a cracked body and a single glowing amber eye in its plain head, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/e6dafe2385d74fd8af0be6efeab56005/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/e6dafe2385d74fd8af0be6efeab56005/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795018880666,
+    "seconds": 113,
+    "files": {
+      "glb": "pipeline/cache/cr_colossus/glb.glb"
+    }
+  },
+  "hero_model": {
+    "kind": "img3d",
+    "taskId": 8339146,
+    "status": "done",
+    "createdAt": 1795018807556,
+    "params": {
+      "img": "@hero_concept.image",
+      "version": "G1",
+      "faceCount": 60000,
+      "aiPredictSize": true
+    },
+    "raw": [
+      "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658641819/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795019228%3B1795026428%26q-key-time%3D1795019228%3B1795026428%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3Df1345f02899b126c32846bc8790f4ea42a4c37a0",
+      "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/27a7b61231e3495f82f37f5287736b60/textured.glb"
+    ],
+    "urls": {
+      "zip": "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658641819/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795019228%3B1795026428%26q-key-time%3D1795019228%3B1795026428%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3Df1345f02899b126c32846bc8790f4ea42a4c37a0",
+      "glb": "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/27a7b61231e3495f82f37f5287736b60/textured.glb"
+    },
+    "urlsAt": 1795019232413,
+    "seconds": 425,
+    "files": {
+      "glb": "pipeline/cache/hero_model/glb.glb"
+    }
+  },
+  "env_pillar": {
+    "kind": "text3d",
+    "taskId": 8339273,
+    "status": "done",
+    "createdAt": 1795018872659,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Tall round ancient stone column broken off at the top, weathered and cracked, a little moss at the base, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/d07a5081370f4db1a38cdb6e5d1f1a9c/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/d07a5081370f4db1a38cdb6e5d1f1a9c/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795018983771,
+    "seconds": 111,
+    "files": {
+      "glb": "pipeline/cache/env_pillar/glb.glb"
+    }
+  },
+  "cr_colossus_anim": {
+    "kind": "articulate",
+    "taskId": 8339311,
+    "status": "done",
+    "createdAt": 1795018883681,
+    "params": {
+      "glbUrl": "@cr_colossus.glb",
+      "prompt": "The right arm rises high and slams down to the ground while the head tilts down."
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/ai-generate/3/NL647LAKTKYSYAABAAAAAAY8.zip"
+    ],
+    "urls": {
+      "result": "https://qhsmodel.kujiale.com/ai-generate/3/NL647LAKTKYSYAABAAAAAAY8.zip"
+    },
+    "urlsAt": 1795019082785,
+    "seconds": 199,
+    "files": {
+      "result": "pipeline/cache/cr_colossus_anim/result.zip",
+      "glb": "pipeline/cache/cr_colossus_anim/unzipped/urdf/meshes/base.glb"
+    }
+  },
+  "env_arch": {
+    "kind": "text3d",
+    "taskId": 8339370,
+    "status": "done",
+    "createdAt": 1795018908628,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Ruined archway built from large rough stone blocks, partially collapsed on one side, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/573ba15d3d4b4d3898a495f9143823ad/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/573ba15d3d4b4d3898a495f9143823ad/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019007733,
+    "seconds": 99,
+    "files": {
+      "glb": "pipeline/cache/env_arch/glb.glb"
+    }
+  },
+  "env_crate": {
+    "kind": "text3d",
+    "taskId": 8339525,
+    "status": "done",
+    "createdAt": 1795018987263,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Sturdy wooden crate with iron corner brackets, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/32d78c78f5324af2afb627176dc0e047/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/32d78c78f5324af2afb627176dc0e047/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019111499,
+    "seconds": 124,
+    "files": {
+      "glb": "pipeline/cache/env_crate/glb.glb"
+    }
+  },
+  "env_emitter": {
+    "kind": "text3d",
+    "taskId": 8339570,
+    "status": "done",
+    "createdAt": 1795019011229,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Large opaque polished cyan crystal mounted on a simple round stone pedestal, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/9de914954d8c4b9d8b0728c4d70005ce/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/9de914954d8c4b9d8b0728c4d70005ce/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019110315,
+    "seconds": 99,
+    "files": {
+      "glb": "pipeline/cache/env_emitter/glb.glb"
+    }
+  },
+  "env_lantern": {
+    "kind": "text3d",
+    "taskId": 8339791,
+    "status": "done",
+    "createdAt": 1795019089154,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Simple hanging iron lantern with a sturdy square frame and a warm glowing amber core, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/d04bc2f23b7a477eb9100e147a7497b2/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/d04bc2f23b7a477eb9100e147a7497b2/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019189916,
+    "seconds": 101,
+    "files": {
+      "glb": "pipeline/cache/env_lantern/glb.glb"
+    }
+  },
+  "env_tree": {
+    "kind": "text3d",
+    "taskId": 8339847,
+    "status": "done",
+    "createdAt": 1795019113724,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Stylized ancient bare tree with a thick twisted trunk, exposed roots and a few bare branches, no leaves, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/ba1aaa2ae1764ff0abd5286a3d7ce41a/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/ba1aaa2ae1764ff0abd5286a3d7ce41a/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019214626,
+    "seconds": 101,
+    "files": {
+      "glb": "pipeline/cache/env_tree/glb.glb"
+    }
+  },
+  "env_rocks": {
+    "kind": "text3d",
+    "taskId": 8339852,
+    "status": "done",
+    "createdAt": 1795019115778,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Cluster of three rounded mossy boulders, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/f197761e35904b2f9f95af0b6f90499e/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/f197761e35904b2f9f95af0b6f90499e/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019227600,
+    "seconds": 112,
+    "files": {
+      "glb": "pipeline/cache/env_rocks/glb.glb"
+    }
+  },
+  "env_mushrooms": {
+    "kind": "text3d",
+    "taskId": 8340040,
+    "status": "done",
+    "createdAt": 1795019193906,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Cluster of four tall glowing bioluminescent teal mushrooms with smooth caps, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/cc0306e3307846668ae61a0d777715fe/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/cc0306e3307846668ae61a0d777715fe/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019343843,
+    "seconds": 150,
+    "files": {
+      "glb": "pipeline/cache/env_mushrooms/glb.glb"
+    }
+  },
+  "env_gear": {
+    "kind": "text3d",
+    "taskId": 8340170,
+    "status": "done",
+    "createdAt": 1795019219197,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Giant ancient bronze gear wheel with worn chunky teeth, partly rusted, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/751c7f556a904ff7ab3a140ee065eb32/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/751c7f556a904ff7ab3a140ee065eb32/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019406920,
+    "seconds": 188,
+    "files": {
+      "glb": "pipeline/cache/env_gear/glb.glb"
+    }
+  },
+  "env_statue": {
+    "kind": "text3d",
+    "taskId": 8340225,
+    "status": "done",
+    "createdAt": 1795019231388,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Weathered stone statue of a kneeling hooded sculptor holding a chisel, the face hidden in the deep hood, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/18019f7b595a4a05b0a895eee4fa931d/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/18019f7b595a4a05b0a895eee4fa931d/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019382371,
+    "seconds": 151,
+    "files": {
+      "glb": "pipeline/cache/env_statue/glb.glb"
+    }
+  },
+  "hero_rig": {
+    "kind": "rig",
+    "taskId": 8340259,
+    "status": "done",
+    "createdAt": 1795019234767,
+    "params": {
+      "modelUrl": "@hero_model.glb"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/ai-generate/3/8340400-1.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/ai-generate/3/8340400-1.glb"
+    },
+    "urlsAt": 1795019296624,
+    "seconds": 62,
+    "files": {
+      "glb": "pipeline/cache/hero_rig/glb.glb"
+    }
+  },
+  "hero_anims_move": {
+    "kind": "retarget",
+    "taskId": 8340510,
+    "status": "done",
+    "createdAt": 1795019301010,
+    "params": {
+      "rigModelUrl": "@hero_rig.glb",
+      "animateInPlace": true,
+      "animationOutputMode": "separate",
+      "outFormat": "glb",
+      "animationIds": [
+        "Idle_Loop",
+        "Jog_Fwd_Loop",
+        "Sprint_Loop",
+        "Jump_Start",
+        "Jump_Loop",
+        "Jump_Land",
+        "NinjaJump_Start",
+        "NinjaJump_Idle_Loop",
+        "NinjaJump_Land",
+        "Roll"
+      ]
+    },
+    "raw": [
+      "{\"actions\":[{\"animation_id\":\"Idle_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/4ae6e297-9e05-4e75-863a-5771845e37e6/animation.glb\"},{\"animation_id\":\"Jog_Fwd_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/38a50ef9-d544-4844-a714-8cc5154cc687/animation.glb\"},{\"animation_id\":\"Sprint_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/e405d430-5e38-415e-936c-36fff8713b9b/animation.glb\"},{\"animation_id\":\"Jump_Start\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/c56767ed-3916-400f-a6ab-5df23c30205d/animation.glb\"},{\"animation_id\":\"Jump_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/20351258-076d-4fe1-8941-cef584b0d421/animation.glb\"},{\"animation_id\":\"Jump_Land\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/1bd56320-826a-4aa9-9fc1-1644387e0b43/animation.glb\"},{\"animation_id\":\"NinjaJump_Start\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/852fc273-b5c8-4f68-bec3-aae83262b388/animation.glb\"},{\"animation_id\":\"NinjaJump_Idle_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/b346f425-504a-49aa-b0fc-286a173c6ba4/animation.glb\"},{\"animation_id\":\"NinjaJump_Land\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/1a131d23-0d5e-4664-bbc3-a3e64e10f560/animation.glb\"},{\"animation_id\":\"Roll\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/0ff09f12-cb87-4805-82dd-134de240ed88/animation.glb\"}]}"
+    ],
+    "urls": {
+      "anim:Idle_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/4ae6e297-9e05-4e75-863a-5771845e37e6/animation.glb",
+      "anim:Jog_Fwd_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/38a50ef9-d544-4844-a714-8cc5154cc687/animation.glb",
+      "anim:Sprint_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/e405d430-5e38-415e-936c-36fff8713b9b/animation.glb",
+      "anim:Jump_Start": "https://qhsmodel.kujiale.com/ha/open/v1/c56767ed-3916-400f-a6ab-5df23c30205d/animation.glb",
+      "anim:Jump_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/20351258-076d-4fe1-8941-cef584b0d421/animation.glb",
+      "anim:Jump_Land": "https://qhsmodel.kujiale.com/ha/open/v1/1bd56320-826a-4aa9-9fc1-1644387e0b43/animation.glb",
+      "anim:NinjaJump_Start": "https://qhsmodel.kujiale.com/ha/open/v1/852fc273-b5c8-4f68-bec3-aae83262b388/animation.glb",
+      "anim:NinjaJump_Idle_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/b346f425-504a-49aa-b0fc-286a173c6ba4/animation.glb",
+      "anim:NinjaJump_Land": "https://qhsmodel.kujiale.com/ha/open/v1/1a131d23-0d5e-4664-bbc3-a3e64e10f560/animation.glb",
+      "anim:Roll": "https://qhsmodel.kujiale.com/ha/open/v1/0ff09f12-cb87-4805-82dd-134de240ed88/animation.glb"
+    },
+    "urlsAt": 1795019313826,
+    "seconds": 13,
+    "files": {
+      "anim:Idle_Loop": "pipeline/cache/hero_anims_move/Idle_Loop.glb",
+      "anim:Jog_Fwd_Loop": "pipeline/cache/hero_anims_move/Jog_Fwd_Loop.glb",
+      "anim:Sprint_Loop": "pipeline/cache/hero_anims_move/Sprint_Loop.glb",
+      "anim:Jump_Start": "pipeline/cache/hero_anims_move/Jump_Start.glb",
+      "anim:Jump_Loop": "pipeline/cache/hero_anims_move/Jump_Loop.glb",
+      "anim:Jump_Land": "pipeline/cache/hero_anims_move/Jump_Land.glb",
+      "anim:NinjaJump_Start": "pipeline/cache/hero_anims_move/NinjaJump_Start.glb",
+      "anim:NinjaJump_Idle_Loop": "pipeline/cache/hero_anims_move/NinjaJump_Idle_Loop.glb",
+      "anim:NinjaJump_Land": "pipeline/cache/hero_anims_move/NinjaJump_Land.glb",
+      "anim:Roll": "pipeline/cache/hero_anims_move/Roll.glb"
+    }
+  },
+  "hero_anims_world": {
+    "kind": "retarget",
+    "taskId": 8340615,
+    "status": "done",
+    "createdAt": 1795019345625,
+    "params": {
+      "rigModelUrl": "@hero_rig.glb",
+      "animateInPlace": true,
+      "animationOutputMode": "separate",
+      "outFormat": "glb",
+      "animationIds": [
+        "Push_Loop",
+        "ClimbUp_1m",
+        "Swim_Fwd_Loop",
+        "Swim_Idle_Loop",
+        "Slide_Loop",
+        "Hit_Knockback",
+        "Death01",
+        "Walk_Loop",
+        "Crouch_Idle_Loop",
+        "Interact"
+      ]
+    },
+    "raw": [
+      "{\"actions\":[{\"animation_id\":\"Push_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/c546eb7f-0a29-4ca7-9bd7-47b12c8dd401/animation.glb\"},{\"animation_id\":\"ClimbUp_1m\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/8de84370-677b-4ff7-add0-be1f1977ad9c/animation.glb\"},{\"animation_id\":\"Swim_Fwd_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/4304375b-fb3e-45a8-bad0-d84e6f90d4ca/animation.glb\"},{\"animation_id\":\"Swim_Idle_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/77fb79e5-667f-4bfb-be06-91b023998fdc/animation.glb\"},{\"animation_id\":\"Slide_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/9ff952c3-a47d-4c11-8e46-6ca6d85dd017/animation.glb\"},{\"animation_id\":\"Hit_Knockback\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/d6654120-8af3-4676-87b3-44a99722bcb5/animation.glb\"},{\"animation_id\":\"Death01\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/fb7a09f3-c144-4a3f-844a-14cf259e38d8/animation.glb\"},{\"animation_id\":\"Walk_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/c4b56313-2a33-442e-8dea-28c7e754fc69/animation.glb\"},{\"animation_id\":\"Crouch_Idle_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/e378fd19-5072-4901-be9f-a936b04b5084/animation.glb\"},{\"animation_id\":\"Interact\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/603f9cdc-01ab-42e6-b2bc-346882f5e5ca/animation.glb\"}]}"
+    ],
+    "urls": {
+      "anim:Push_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/c546eb7f-0a29-4ca7-9bd7-47b12c8dd401/animation.glb",
+      "anim:ClimbUp_1m": "https://qhsmodel.kujiale.com/ha/open/v1/8de84370-677b-4ff7-add0-be1f1977ad9c/animation.glb",
+      "anim:Swim_Fwd_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/4304375b-fb3e-45a8-bad0-d84e6f90d4ca/animation.glb",
+      "anim:Swim_Idle_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/77fb79e5-667f-4bfb-be06-91b023998fdc/animation.glb",
+      "anim:Slide_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/9ff952c3-a47d-4c11-8e46-6ca6d85dd017/animation.glb",
+      "anim:Hit_Knockback": "https://qhsmodel.kujiale.com/ha/open/v1/d6654120-8af3-4676-87b3-44a99722bcb5/animation.glb",
+      "anim:Death01": "https://qhsmodel.kujiale.com/ha/open/v1/fb7a09f3-c144-4a3f-844a-14cf259e38d8/animation.glb",
+      "anim:Walk_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/c4b56313-2a33-442e-8dea-28c7e754fc69/animation.glb",
+      "anim:Crouch_Idle_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/e378fd19-5072-4901-be9f-a936b04b5084/animation.glb",
+      "anim:Interact": "https://qhsmodel.kujiale.com/ha/open/v1/603f9cdc-01ab-42e6-b2bc-346882f5e5ca/animation.glb"
+    },
+    "urlsAt": 1795019358501,
+    "seconds": 13,
+    "files": {
+      "anim:Push_Loop": "pipeline/cache/hero_anims_world/Push_Loop.glb",
+      "anim:ClimbUp_1m": "pipeline/cache/hero_anims_world/ClimbUp_1m.glb",
+      "anim:Swim_Fwd_Loop": "pipeline/cache/hero_anims_world/Swim_Fwd_Loop.glb",
+      "anim:Swim_Idle_Loop": "pipeline/cache/hero_anims_world/Swim_Idle_Loop.glb",
+      "anim:Slide_Loop": "pipeline/cache/hero_anims_world/Slide_Loop.glb",
+      "anim:Hit_Knockback": "pipeline/cache/hero_anims_world/Hit_Knockback.glb",
+      "anim:Death01": "pipeline/cache/hero_anims_world/Death01.glb",
+      "anim:Walk_Loop": "pipeline/cache/hero_anims_world/Walk_Loop.glb",
+      "anim:Crouch_Idle_Loop": "pipeline/cache/hero_anims_world/Crouch_Idle_Loop.glb",
+      "anim:Interact": "pipeline/cache/hero_anims_world/Interact.glb"
+    }
+  },
+  "hero_anims_story": {
+    "kind": "retarget",
+    "taskId": 8340623,
+    "status": "done",
+    "createdAt": 1795019347540,
+    "params": {
+      "rigModelUrl": "@hero_rig.glb",
+      "animateInPlace": true,
+      "animationOutputMode": "separate",
+      "outFormat": "glb",
+      "animationIds": [
+        "LayToIdle",
+        "Spell_Simple_Enter",
+        "Spell_Simple_Idle_Loop",
+        "Spell_Simple_Shoot",
+        "Spell_Simple_Exit",
+        "Idle_Lantern_Loop",
+        "Sitting_Enter",
+        "Sitting_Idle_Loop",
+        "Dance_Loop",
+        "Yes"
+      ]
+    },
+    "raw": [
+      "{\"actions\":[{\"animation_id\":\"LayToIdle\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/4efbb652-abc2-4799-8b53-b4449bab3d6b/animation.glb\"},{\"animation_id\":\"Spell_Simple_Enter\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/3f859320-5d19-4438-946d-e4b4dc574237/animation.glb\"},{\"animation_id\":\"Spell_Simple_Idle_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/05aad993-66d2-4685-89cc-f842f8aa6b1e/animation.glb\"},{\"animation_id\":\"Spell_Simple_Shoot\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/4cd36dd3-8e8b-4d1b-975d-110e7c1bf1e2/animation.glb\"},{\"animation_id\":\"Spell_Simple_Exit\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/66f17d77-48cb-48e6-bd43-9da386188df9/animation.glb\"},{\"animation_id\":\"Idle_Lantern_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/eb9af22a-5b31-44d7-8171-f966963da7a5/animation.glb\"},{\"animation_id\":\"Sitting_Enter\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/e27c8410-5c9d-4259-8e52-d632c4d1ec7e/animation.glb\"},{\"animation_id\":\"Sitting_Idle_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/c5b1b98a-1911-4c47-b0b0-6b7f5ceba5c2/animation.glb\"},{\"animation_id\":\"Dance_Loop\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/58fed0fd-44fe-4cb3-a9d7-e2cb5682ff42/animation.glb\"},{\"animation_id\":\"Yes\",\"status\":\"success\",\"animationGlbUrl\":\"https://qhsmodel.kujiale.com/ha/open/v1/6d5294aa-ae17-458f-8141-579e3161026f/animation.glb\"}]}"
+    ],
+    "urls": {
+      "anim:LayToIdle": "https://qhsmodel.kujiale.com/ha/open/v1/4efbb652-abc2-4799-8b53-b4449bab3d6b/animation.glb",
+      "anim:Spell_Simple_Enter": "https://qhsmodel.kujiale.com/ha/open/v1/3f859320-5d19-4438-946d-e4b4dc574237/animation.glb",
+      "anim:Spell_Simple_Idle_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/05aad993-66d2-4685-89cc-f842f8aa6b1e/animation.glb",
+      "anim:Spell_Simple_Shoot": "https://qhsmodel.kujiale.com/ha/open/v1/4cd36dd3-8e8b-4d1b-975d-110e7c1bf1e2/animation.glb",
+      "anim:Spell_Simple_Exit": "https://qhsmodel.kujiale.com/ha/open/v1/66f17d77-48cb-48e6-bd43-9da386188df9/animation.glb",
+      "anim:Idle_Lantern_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/eb9af22a-5b31-44d7-8171-f966963da7a5/animation.glb",
+      "anim:Sitting_Enter": "https://qhsmodel.kujiale.com/ha/open/v1/e27c8410-5c9d-4259-8e52-d632c4d1ec7e/animation.glb",
+      "anim:Sitting_Idle_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/c5b1b98a-1911-4c47-b0b0-6b7f5ceba5c2/animation.glb",
+      "anim:Dance_Loop": "https://qhsmodel.kujiale.com/ha/open/v1/58fed0fd-44fe-4cb3-a9d7-e2cb5682ff42/animation.glb",
+      "anim:Yes": "https://qhsmodel.kujiale.com/ha/open/v1/6d5294aa-ae17-458f-8141-579e3161026f/animation.glb"
+    },
+    "urlsAt": 1795019360118,
+    "seconds": 13,
+    "files": {
+      "anim:LayToIdle": "pipeline/cache/hero_anims_story/LayToIdle.glb",
+      "anim:Spell_Simple_Enter": "pipeline/cache/hero_anims_story/Spell_Simple_Enter.glb",
+      "anim:Spell_Simple_Idle_Loop": "pipeline/cache/hero_anims_story/Spell_Simple_Idle_Loop.glb",
+      "anim:Spell_Simple_Shoot": "pipeline/cache/hero_anims_story/Spell_Simple_Shoot.glb",
+      "anim:Spell_Simple_Exit": "pipeline/cache/hero_anims_story/Spell_Simple_Exit.glb",
+      "anim:Idle_Lantern_Loop": "pipeline/cache/hero_anims_story/Idle_Lantern_Loop.glb",
+      "anim:Sitting_Enter": "pipeline/cache/hero_anims_story/Sitting_Enter.glb",
+      "anim:Sitting_Idle_Loop": "pipeline/cache/hero_anims_story/Sitting_Idle_Loop.glb",
+      "anim:Dance_Loop": "pipeline/cache/hero_anims_story/Dance_Loop.glb",
+      "anim:Yes": "pipeline/cache/hero_anims_story/Yes.glb"
+    }
+  },
+  "hero_stone": {
+    "kind": "material",
+    "taskId": 8340693,
+    "status": "done",
+    "createdAt": 1795019388697,
+    "params": {
+      "meshUrl": "@hero_model.glb",
+      "img": "@tex_stone.image",
+      "version": "v3.0-standard",
+      "outputFormat": [
+        "glb"
+      ]
+    },
+    "raw": [
+      "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658642928/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795019608%3B1795026808%26q-key-time%3D1795019608%3B1795026808%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3Df4e99e6a7d2cb6ef1a032f1baa6d2746d7be8216",
+      "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/0a26bff53ab94411ab2c4365af61b25c/textured.glb",
+      "NOT_REQUESTED",
+      "NOT_REQUESTED",
+      "NOT_REQUESTED"
+    ],
+    "urls": {
+      "zip": "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658642928/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795019608%3B1795026808%26q-key-time%3D1795019608%3B1795026808%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3Df4e99e6a7d2cb6ef1a032f1baa6d2746d7be8216",
+      "glb": "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/0a26bff53ab94411ab2c4365af61b25c/textured.glb"
+    },
+    "urlsAt": 1795019623989,
+    "seconds": 235,
+    "files": {
+      "glb": "pipeline/cache/hero_stone/glb.glb"
+    }
+  },
+  "hero_wood": {
+    "kind": "material",
+    "taskId": 8340738,
+    "status": "done",
+    "createdAt": 1795019406903,
+    "params": {
+      "meshUrl": "@hero_model.glb",
+      "img": "@tex_wood.image",
+      "version": "v3.0-standard",
+      "outputFormat": [
+        "glb"
+      ]
+    },
+    "raw": [
+      "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658645261/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795019633%3B1795026833%26q-key-time%3D1795019633%3B1795026833%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3D6862b63b900ec9cae1dd403fbcd8dbd4654c91a5",
+      "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/365d0191011a417ca9b8eb26a1742df8/textured.glb",
+      "NOT_REQUESTED",
+      "NOT_REQUESTED",
+      "NOT_REQUESTED"
+    ],
+    "urls": {
+      "zip": "https://tx-qhfpm-1258830046.cos.ap-shanghai.myqcloud.com/lux3d/658645261/result.zip?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDTmpb6KIzPZS5RWKr76oGRKwHL8etrYw4%26q-sign-time%3D1795019633%3B1795026833%26q-key-time%3D1795019633%3B1795026833%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3D6862b63b900ec9cae1dd403fbcd8dbd4654c91a5",
+      "glb": "https://qhsmodel.kujiale.com/lux3dPbrEmbedResult/365d0191011a417ca9b8eb26a1742df8/textured.glb"
+    },
+    "urlsAt": 1795019645780,
+    "seconds": 239,
+    "files": {
+      "glb": "pipeline/cache/hero_wood/glb.glb"
+    }
+  },
+  "env_wall": {
+    "kind": "text3d",
+    "taskId": 8340745,
+    "status": "done",
+    "createdAt": 1795019408412,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Section of ruined ancient stone wall with one tall arched window opening, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/b511bd5c581a46d28a3f3b330d3398d8/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/b511bd5c581a46d28a3f3b330d3398d8/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019508288,
+    "seconds": 100,
+    "files": {
+      "glb": "pipeline/cache/env_wall/glb.glb"
+    }
+  },
+  "env_scaffold": {
+    "kind": "text3d",
+    "taskId": 8340748,
+    "status": "done",
+    "createdAt": 1795019410486,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Simple old wooden scaffolding tower made of thick beams with one ladder, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/18647630d483403c9c52c307e3ab5fdf/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/18647630d483403c9c52c307e3ab5fdf/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019559215,
+    "seconds": 149,
+    "files": {
+      "glb": "pipeline/cache/env_scaffold/glb.glb"
+    }
+  },
+  "obj_crack_slab": {
+    "kind": "text3d",
+    "taskId": 8340996,
+    "status": "done",
+    "createdAt": 1795019511817,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 30000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Thick square stone floor slab split by deep jagged fractures into large chunks, about to shatter, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/02576d196a7f44bba170e03962b9053d/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/02576d196a7f44bba170e03962b9053d/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019647759,
+    "seconds": 136,
+    "files": {
+      "glb": "pipeline/cache/obj_crack_slab/glb.glb"
+    }
+  },
+  "cr_moth": {
+    "kind": "text3d",
+    "taskId": 8341163,
+    "status": "done",
+    "createdAt": 1795019562344,
+    "params": {
+      "version": "G1-Turbo",
+      "style": "hand_painted",
+      "outputFormat": [
+        "glb"
+      ],
+      "faceCount": 20000,
+      "enablePbr": true,
+      "aiPredictSize": true,
+      "prompt": "Small lantern moth creature with a softly glowing amber body and two large opaque wings with simple amber and brown bands, stylized hand-painted fantasy game asset, ancient maker civilization, weathered, chunky readable silhouette, single isolated object"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/6fa3bd072d4945f7abc42602d16aad6d/results/tex_mesh/attempt-1/tex_mesh.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/genesis3d/inference/20261118/6fa3bd072d4945f7abc42602d16aad6d/results/tex_mesh/attempt-1/tex_mesh.glb"
+    },
+    "urlsAt": 1795019673747,
+    "seconds": 111,
+    "files": {
+      "glb": "pipeline/cache/cr_moth/glb.glb"
+    }
+  },
+  "obj_crack_slab_parts": {
+    "kind": "split",
+    "taskId": 8341455,
+    "status": "done",
+    "createdAt": 1795019651420,
+    "params": {
+      "glbUrl": "@obj_crack_slab.glb"
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/glbPartsReconstructResult/NL65EIIKTJCWQAABAAAAADY8.glb"
+    ],
+    "urls": {
+      "glb": "https://qhsmodel.kujiale.com/glbPartsReconstructResult/NL65EIIKTJCWQAABAAAAADY8.glb"
+    },
+    "urlsAt": 1795019802166,
+    "seconds": 151,
+    "files": {
+      "glb": "pipeline/cache/obj_crack_slab_parts/glb.glb"
+    }
+  },
+  "cr_moth_anim": {
+    "kind": "articulate",
+    "taskId": 8341555,
+    "status": "done",
+    "createdAt": 1795019676586,
+    "params": {
+      "glbUrl": "@cr_moth.glb",
+      "prompt": "The two wings flap up and down together in a smooth loop while the body stays still."
+    },
+    "raw": [
+      "https://qhsmodel.kujiale.com/ai-generate/3/NL65GSAKTLFGSAABAAAAADY8.zip"
+    ],
+    "urls": {
+      "result": "https://qhsmodel.kujiale.com/ai-generate/3/NL65GSAKTLFGSAABAAAAADY8.zip"
+    },
+    "urlsAt": 1795019902313,
+    "seconds": 226,
+    "files": {
+      "result": "pipeline/cache/cr_moth_anim/result.zip",
+      "glb": "pipeline/cache/cr_moth_anim/unzipped/urdf/meshes/body.glb"
+    }
+  }
+}

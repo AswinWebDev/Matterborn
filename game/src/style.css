@@ -1,0 +1,542 @@
+:root {
+  --amber: #ffb35c;
+  --amber-soft: rgba(255, 179, 92, 0.75);
+  --ink: #f6eadb;
+  --ink-dim: rgba(246, 234, 219, 0.7);
+  --shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #07080c;
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  user-select: none;
+}
+#game {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+.hidden {
+  display: none !important;
+}
+
+/* ---------- letterbox, fade */
+.letterbox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #000;
+  z-index: 20;
+  transition: height 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+#letterbox-top {
+  top: 0;
+}
+#letterbox-bottom {
+  bottom: 0;
+}
+.letterbox.on {
+  height: 11vh;
+}
+#fade {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 40;
+}
+
+/* ---------- HUD */
+#hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.6s;
+}
+body.cinematic #hud {
+  opacity: 0;
+}
+#forms {
+  position: absolute;
+  left: 28px;
+  bottom: 26px;
+  display: flex;
+  gap: 10px;
+}
+#forms .slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 64px;
+  padding: 8px 4px 6px;
+  border-radius: 12px;
+  background: rgba(10, 10, 16, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s, border-color 0.25s, opacity 0.25s;
+}
+#forms .slot .key {
+  font-size: 11px;
+  color: var(--ink-dim);
+}
+#forms .slot .gem {
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  background: var(--c);
+  box-shadow: 0 0 14px var(--c);
+}
+#forms .slot .name {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+#forms .slot.locked {
+  opacity: 0.18;
+}
+#forms .slot.locked .gem {
+  background: #555;
+  box-shadow: none;
+}
+#forms .slot.active {
+  border-color: var(--c);
+  transform: translateY(-4px);
+  box-shadow: 0 0 22px -6px var(--c);
+}
+#forms .slot.pulse {
+  animation: pulse 0.5s ease;
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(-4px) scale(1);
+  }
+  40% {
+    transform: translateY(-6px) scale(1.18);
+  }
+  100% {
+    transform: translateY(-4px) scale(1);
+  }
+}
+#hint,
+#toast {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  max-width: min(760px, 86vw);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.45;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(8, 8, 14, 0.5);
+  border: 1px solid rgba(255, 200, 140, 0.18);
+  text-shadow: var(--shadow);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  backdrop-filter: blur(6px);
+}
+#hint {
+  bottom: 34px;
+}
+#toast {
+  top: 30px;
+  font-size: 15px;
+}
+#hint.show,
+#toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* ---------- story text and title cards */
+#story {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 14vh;
+  text-align: center;
+  z-index: 25;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 32px);
+  color: var(--ink);
+  text-shadow: var(--shadow);
+  opacity: 0;
+  transition: opacity 1.2s;
+  pointer-events: none;
+  padding: 0 8vw;
+}
+#story.show {
+  opacity: 1;
+}
+#story .sub {
+  font-size: 0.6em;
+  color: var(--ink-dim);
+  margin-top: 6px;
+}
+#titlecard {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 26;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.4s;
+}
+#titlecard.show {
+  opacity: 1;
+}
+#titlecard .main {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(42px, 8vw, 118px);
+  letter-spacing: 0.22em;
+  color: #fff5e6;
+  text-shadow: 0 0 40px rgba(255, 170, 80, 0.55), 0 0 4px rgba(255, 220, 180, 0.8);
+  animation: rise 2.4s ease both;
+}
+#titlecard .sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 28px);
+  color: var(--ink-dim);
+  margin-top: 6px;
+  max-width: 70vw;
+  text-align: center;
+}
+@keyframes rise {
+  from {
+    letter-spacing: 0.5em;
+    opacity: 0;
+    filter: blur(8px);
+  }
+  to {
+    letter-spacing: 0.22em;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+#skip {
+  position: fixed;
+  right: 28px;
+  bottom: 13vh;
+  z-index: 30;
+  font-size: 12px;
+  color: var(--ink-dim);
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#skip.show {
+  opacity: 0.85;
+}
+#skip .track {
+  width: 70px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+}
+#skip-bar {
+  height: 100%;
+  width: 0;
+  background: var(--amber);
+}
+
+/* ---------- title screen */
+#title {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.55) 100%);
+}
+.logo {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(48px, 9vw, 132px);
+  letter-spacing: 0.22em;
+  color: #fff3e2;
+  text-shadow: 0 0 50px rgba(255, 160, 70, 0.55), 0 0 6px rgba(255, 220, 180, 0.9);
+  animation: rise 3s ease both;
+}
+.logo.small {
+  font-size: 34px;
+  animation: none;
+}
+.tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 28px);
+  color: var(--ink-dim);
+  margin-top: 4px;
+}
+.press {
+  margin-top: 6vh;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  animation: breathe 2.4s ease-in-out infinite;
+}
+@keyframes breathe {
+  50% {
+    opacity: 0.35;
+  }
+}
+.controls {
+  margin-top: 4vh;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 6px 28px;
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+.controls b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.controls.small {
+  grid-template-columns: 1fr;
+  margin-top: 18px;
+  text-align: center;
+}
+.made {
+  position: absolute;
+  bottom: 22px;
+  font-size: 12px;
+  color: var(--ink-dim);
+  letter-spacing: 0.04em;
+}
+.made b {
+  color: var(--amber);
+}
+
+/* ---------- pause */
+#pause {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  background: rgba(5, 6, 10, 0.55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pause .panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  background: rgba(16, 16, 24, 0.75);
+  border: 1px solid rgba(255, 190, 120, 0.2);
+}
+#pause .ptitle {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+#pause button {
+  font: inherit;
+  font-size: 15px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink);
+  cursor: pointer;
+}
+#pause button:hover {
+  border-color: var(--amber-soft);
+  background: rgba(255, 170, 80, 0.12);
+}
+/* paused in a cutscene: offer to skip it; going back to a shrine mid-scene is not offered */
+#pause:not(.cutscene) #skipscene,
+#pause.cutscene #restart {
+  display: none;
+}
+
+/* ---------- credits */
+#credits {
+  position: fixed;
+  inset: 0;
+  z-index: 28;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+#credits.show {
+  opacity: 1;
+}
+#credits .roll {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: var(--ink);
+  text-shadow: var(--shadow);
+  background: rgba(0, 0, 0, 0.35);
+  padding: 30px 46px;
+  border-radius: 20px;
+}
+#credits .ctitle {
+  font-family: 'Cinzel', serif;
+  font-size: 44px;
+  letter-spacing: 0.22em;
+}
+#credits h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin: 18px 0 4px;
+}
+#credits p {
+  margin: 4px 0;
+}
+#credits .thanks {
+  margin-top: 22px;
+  font-style: italic;
+}
+
+/* ---------- loading */
+#loading {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: #07080c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  transition: opacity 0.8s;
+}
+#loading.hidden {
+  display: flex !important;
+  opacity: 0;
+  pointer-events: none;
+}
+#loading .bar {
+  width: 240px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+#loading-bar {
+  height: 100%;
+  width: 0;
+  background: var(--amber);
+  transition: width 0.4s;
+}
+#loading-text {
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+
+/* ---------- the Maker's Archive (title screen gallery of every Aholo model) */
+#archive-btn {
+  margin-top: 2.4vh;
+  font-size: 13px;
+  color: var(--ink-dim);
+  letter-spacing: 0.06em;
+  padding: 7px 16px;
+  border: 1px solid rgba(255, 190, 120, 0.28);
+  border-radius: 20px;
+  background: rgba(10, 10, 16, 0.35);
+  transition: color 0.2s, border-color 0.2s;
+}
+#archive-btn:hover {
+  color: var(--ink);
+  border-color: rgba(255, 190, 120, 0.65);
+}
+#archive-btn b {
+  color: var(--amber);
+}
+#archive {
+  position: fixed;
+  left: 4.5vw;
+  bottom: 7vh;
+  z-index: 32;
+  max-width: min(540px, 86vw);
+  color: var(--ink);
+  pointer-events: none;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.85);
+}
+#archive.hidden {
+  display: none;
+}
+#archive .atitle {
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+#archive .aname {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(28px, 3.4vw, 46px);
+  color: #fff3e2;
+}
+#archive .aop {
+  font-size: 14px;
+  color: #ffcf8f;
+  margin: 6px 0 10px;
+}
+#archive .prompt {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink-dim);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+#archive .afacts {
+  font-size: 12.5px;
+  color: var(--ink-dim);
+  letter-spacing: 0.04em;
+}
+#archive .anav {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+#archive .anav b {
+  color: var(--ink);
+}
+#archive .aclip {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--amber);
+  letter-spacing: 0.06em;
+}

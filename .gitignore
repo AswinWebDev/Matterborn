@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+pipeline/cache/
+*.log
+backups/
+
+# synthetic test assets (pipeline self-test)
+game/public/assets-test/
+
+# trailer and still captures from src/dev/Capture.ts
+capture/
+deliverables/
+
+# local tool settings and session notes (not part of the project)
+.claude/
+NEXT_SESSION_PROMPT.md
+# placeholder report from before the team name was set
+docs/report/TEAM NAME*

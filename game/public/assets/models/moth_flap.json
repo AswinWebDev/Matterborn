@@ -1,0 +1,57 @@
+{
+ "type": "urdf",
+ "root": "body",
+ "links": {
+  "body": "models/moth_flap_body.glb",
+  "left_wing": "models/moth_flap_left_wing.glb",
+  "right_wing": "models/moth_flap_right_wing.glb"
+ },
+ "joints": [
+  {
+   "name": "left_wing_joint",
+   "type": "revolute",
+   "parent": "body",
+   "child": "left_wing",
+   "xyz": [
+    -0.0733,
+    0.19798014,
+    -0.0387
+   ],
+   "rpy": [
+    0,
+    0,
+    0
+   ],
+   "axis": [
+    -0.296406,
+    -0.917819,
+    0.264105
+   ],
+   "lower": -0.523599,
+   "upper": 0.523599
+  },
+  {
+   "name": "right_wing_joint",
+   "type": "revolute",
+   "parent": "body",
+   "child": "right_wing",
+   "xyz": [
+    0.0692,
+    0.20948014,
+    -0.0406
+   ],
+   "rpy": [
+    0,
+    0,
+    0
+   ],
+   "axis": [
+    -0.292889,
+    0.919667,
+    -0.26159
+   ],
+   "lower": -0.523599,
+   "upper": 0.523599
+  }
+ ]
+}

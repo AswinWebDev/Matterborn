@@ -1,0 +1,39 @@
+{
+  "name": "matterborn",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Matterborn: a cinematic 3D puzzle-platformer built with Aholo Lux3D for the Manycore Aholo Global 3D AI Hackathon",
+  "scripts": {
+    "dev": "vite --config game/vite.config.ts",
+    "build": "vite build --config game/vite.config.ts",
+    "preview": "vite preview --config game/vite.config.ts",
+    "typecheck": "tsc -p game/tsconfig.json --noEmit",
+    "gen": "node --env-file-if-exists=.env pipeline/gen.mjs",
+    "gen:status": "node --env-file-if-exists=.env pipeline/gen.mjs --status",
+    "process": "node pipeline/process.mjs",
+    "setkey": "node pipeline/setkey.mjs",
+    "test": "node --test pipeline/lux.test.mjs"
+  },
+  "dependencies": {
+    "@sparkjsdev/spark": "2.4.0",
+    "n8ao": "2.0.1",
+    "postprocessing": "6.39.6",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "@manycore/aholo-sdk-lux3d": "1.10.0",
+    "@manycore/aholo-sdk-world": "1.5.0",
+    "@types/three": "0.187.0",
+    "draco3dgltf": "1.5.7",
+    "fflate": "0.8.3",
+    "meshoptimizer": "1.1.1",
+    "mp4-muxer": "5.2.2",
+    "sharp": "0.35.5",
+    "typescript": "~5.9.3",
+    "vite": "8.3.8"
+  }
+}

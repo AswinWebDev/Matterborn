@@ -1,0 +1,1729 @@
+{
+  "generatedAt": "2026-11-18T22:11:34.030Z",
+  "assets": [
+    {
+      "id": "hero_rig",
+      "out": "models/hero_rig.glb",
+      "before": 12163480,
+      "after": 661472,
+      "statsIn": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 1,
+        "joints": 52,
+        "animations": [],
+        "nodes": 54
+      },
+      "statsOut": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 1,
+        "joints": 52,
+        "animations": [],
+        "nodes": 54
+      },
+      "bounds": {
+        "min": [
+          -0.08034078031778336,
+          -0.10000000149011612,
+          -0.03128506615757942
+        ],
+        "max": [
+          0.08034078031778336,
+          0.10000000149011612,
+          0.03128506615757942
+        ],
+        "size": [
+          0.161,
+          0.2,
+          0.063
+        ]
+      }
+    },
+    {
+      "id": "hero_concept",
+      "out": "docs/media/hero_concept.jpg",
+      "after": 48181
+    },
+    {
+      "id": "hero_model",
+      "out": "models/hero_model.glb",
+      "before": 6364404,
+      "after": 538592,
+      "statsIn": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "statsOut": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "bounds": {
+        "min": [
+          -0.08034078031778336,
+          -0.10000000149011612,
+          -0.03128506615757942
+        ],
+        "max": [
+          0.08034078031778336,
+          0.10000000149011612,
+          0.03128506615757942
+        ],
+        "size": [
+          0.161,
+          0.2,
+          0.063
+        ]
+      }
+    },
+    {
+      "id": "hero_anims_move/Idle_Loop",
+      "out": "anims/Idle_Loop.glb",
+      "before": 12260772,
+      "after": 35532,
+      "duration": 2.5,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236914075911045,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_move/Jog_Fwd_Loop",
+      "out": "anims/Jog_Fwd_Loop.glb",
+      "before": 12211460,
+      "after": 29080,
+      "duration": 0.933,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02617606893181801,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.003
+    },
+    {
+      "id": "hero_anims_move/Sprint_Loop",
+      "out": "anims/Sprint_Loop.glb",
+      "before": 12202904,
+      "after": 27368,
+      "duration": 0.667,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02313622459769249,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_move/Jump_Start",
+      "out": "anims/Jump_Start.glb",
+      "before": 12224080,
+      "after": 39456,
+      "duration": 1.333,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.05018439516425133,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.015
+    },
+    {
+      "id": "hero_anims_move/Jump_Loop",
+      "out": "anims/Jump_Loop.glb",
+      "before": 12260772,
+      "after": 32600,
+      "duration": 2.5,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02306099236011505,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_move/Jump_Land",
+      "out": "anims/Jump_Land.glb",
+      "before": 12221968,
+      "after": 38192,
+      "duration": 1.267,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.01849088817834854,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0
+    },
+    {
+      "id": "hero_anims_move/NinjaJump_Start",
+      "out": "anims/NinjaJump_Start.glb",
+      "before": 12212516,
+      "after": 32228,
+      "duration": 0.967,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.05018439516425133,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.015
+    },
+    {
+      "id": "hero_anims_move/NinjaJump_Idle_Loop",
+      "out": "anims/NinjaJump_Idle_Loop.glb",
+      "before": 12244880,
+      "after": 32188,
+      "duration": 2,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.022319050505757332,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_move/NinjaJump_Land",
+      "out": "anims/NinjaJump_Land.glb",
+      "before": 12221968,
+      "after": 35748,
+      "duration": 1.267,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.022319050505757332,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_move/Roll",
+      "out": "anims/Roll.glb",
+      "before": 12228304,
+      "after": 45760,
+      "duration": 1.467,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.051210884004831314,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.016
+    },
+    {
+      "id": "hero_anims_world/Push_Loop",
+      "out": "anims/Push_Loop.glb",
+      "before": 12266372,
+      "after": 40632,
+      "duration": 2.667,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.0344020277261734,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.008
+    },
+    {
+      "id": "hero_anims_world/ClimbUp_1m",
+      "out": "anims/ClimbUp_1m.glb",
+      "before": 12202904,
+      "after": 34772,
+      "duration": 0.667,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02617606893181801,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.003
+    },
+    {
+      "id": "hero_anims_world/Swim_Fwd_Loop",
+      "out": "anims/Swim_Fwd_Loop.glb",
+      "before": 12224080,
+      "after": 32524,
+      "duration": 1.333,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.09725713729858398,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.039
+    },
+    {
+      "id": "hero_anims_world/Swim_Idle_Loop",
+      "out": "anims/Swim_Idle_Loop.glb",
+      "before": 12287596,
+      "after": 50860,
+      "duration": 3.333,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.11698947846889496,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.049
+    },
+    {
+      "id": "hero_anims_world/Slide_Loop",
+      "out": "anims/Slide_Loop.glb",
+      "before": 12244880,
+      "after": 45332,
+      "duration": 2,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.08739463984966278,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.034
+    },
+    {
+      "id": "hero_anims_world/Hit_Knockback",
+      "out": "anims/Hit_Knockback.glb",
+      "before": 12208240,
+      "after": 33584,
+      "duration": 0.833,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.0432739332318306,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.012
+    },
+    {
+      "id": "hero_anims_world/Death01",
+      "out": "anims/Death01.glb",
+      "before": 12257604,
+      "after": 57212,
+      "duration": 2.4,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02237250842154026,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_world/Walk_Loop",
+      "out": "anims/Walk_Loop.glb",
+      "before": 12224080,
+      "after": 34048,
+      "duration": 1.333,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02288156934082508,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_world/Crouch_Idle_Loop",
+      "out": "anims/Crouch_Idle_Loop.glb",
+      "before": 12274820,
+      "after": 38012,
+      "duration": 2.933,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.054371125996112823,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.018
+    },
+    {
+      "id": "hero_anims_world/Interact",
+      "out": "anims/Interact.glb",
+      "before": 12244880,
+      "after": 33520,
+      "duration": 2,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236892096698284,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/LayToIdle",
+      "out": "anims/LayToIdle.glb",
+      "before": 12230416,
+      "after": 48004,
+      "duration": 1.533,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.08776415884494781,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.034
+    },
+    {
+      "id": "hero_anims_story/Spell_Simple_Enter",
+      "out": "anims/Spell_Simple_Enter.glb",
+      "before": 12198736,
+      "after": 31224,
+      "duration": 0.533,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02237250842154026,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/Spell_Simple_Idle_Loop",
+      "out": "anims/Spell_Simple_Idle_Loop.glb",
+      "before": 12248100,
+      "after": 29760,
+      "duration": 2.1,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236667275428772,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/Spell_Simple_Shoot",
+      "out": "anims/Spell_Simple_Shoot.glb",
+      "before": 12197308,
+      "after": 29316,
+      "duration": 0.5,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236667275428772,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/Spell_Simple_Exit",
+      "out": "anims/Spell_Simple_Exit.glb",
+      "before": 12195568,
+      "after": 29096,
+      "duration": 0.433,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236667275428772,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/Idle_Lantern_Loop",
+      "out": "anims/Idle_Lantern_Loop.glb",
+      "before": 12260772,
+      "after": 34184,
+      "duration": 2.5,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236914075911045,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/Sitting_Enter",
+      "out": "anims/Sitting_Enter.glb",
+      "before": 12222704,
+      "after": 46372,
+      "duration": 1.3,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236892096698284,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "hero_anims_story/Sitting_Idle_Loop",
+      "out": "anims/Sitting_Idle_Loop.glb",
+      "before": 12234640,
+      "after": 29568,
+      "duration": 1.667,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.04870014637708664,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.015
+    },
+    {
+      "id": "hero_anims_story/Dance_Loop",
+      "out": "anims/Dance_Loop.glb",
+      "before": 12213200,
+      "after": 29932,
+      "duration": 1,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02086464688181877,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.001
+    },
+    {
+      "id": "hero_anims_story/Yes",
+      "out": "anims/Yes.glb",
+      "before": 12260772,
+      "after": 35284,
+      "duration": 2.5,
+      "channels": 53,
+      "targets": 52,
+      "missing": [],
+      "hipsFirst": [
+        0.001088752062059939,
+        -0.02236914075911045,
+        0.00011764133523683995
+      ],
+      "hipsShift": 0.002
+    },
+    {
+      "id": "tex_stone",
+      "out": "textures/stone.jpg",
+      "after": 373249,
+      "size": "1024x1024"
+    },
+    {
+      "id": "tex_wood",
+      "out": "textures/wood.jpg",
+      "after": 176670,
+      "size": "1024x1024"
+    },
+    {
+      "id": "hero_stone",
+      "out": "models/hero_stone.glb",
+      "before": 7897996,
+      "after": 638700,
+      "statsIn": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "statsOut": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "bounds": {
+        "min": [
+          -0.08034078031778336,
+          -0.10000000149011612,
+          -0.03128506615757942
+        ],
+        "max": [
+          0.08034078031778336,
+          0.10000000149011612,
+          0.03128506615757942
+        ],
+        "size": [
+          0.161,
+          0.2,
+          0.063
+        ]
+      }
+    },
+    {
+      "id": "hero_wood",
+      "out": "models/hero_wood.glb",
+      "before": 5973288,
+      "after": 529472,
+      "statsIn": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "statsOut": {
+        "tris": 54252,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "bounds": {
+        "min": [
+          -0.08034078031778336,
+          -0.10000000149011612,
+          -0.03128506615757942
+        ],
+        "max": [
+          0.08034078031778336,
+          0.10000000149011612,
+          0.03128506615757942
+        ],
+        "size": [
+          0.161,
+          0.2,
+          0.063
+        ]
+      }
+    },
+    {
+      "id": "obj_block",
+      "out": "models/obj_block.glb",
+      "before": 7599636,
+      "after": 348400,
+      "statsIn": {
+        "tris": 27752,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 27752,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.22499999403953552,
+          -0.22499753534793854,
+          -0.22499217092990875
+        ],
+        "max": [
+          0.22499999403953552,
+          0.22499753534793854,
+          0.22499217092990875
+        ],
+        "size": [
+          0.45,
+          0.45,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "obj_block_wood",
+      "out": "models/obj_block_wood.glb",
+      "before": 7367124,
+      "after": 303280,
+      "statsIn": {
+        "tris": 27752,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "statsOut": {
+        "tris": 27752,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 1
+      },
+      "bounds": {
+        "min": [
+          -0.22499999403953552,
+          -0.22499753534793854,
+          -0.22499217092990875
+        ],
+        "max": [
+          0.22499999403953552,
+          0.22499753534793854,
+          0.22499217092990875
+        ],
+        "size": [
+          0.45,
+          0.45,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "obj_crack_slab",
+      "out": "models/obj_crack_slab.glb",
+      "before": 9414232,
+      "after": 660760,
+      "statsIn": {
+        "tris": 24766,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 24766,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.25,
+          -0.2508530914783478,
+          -0.24912847578525543
+        ],
+        "max": [
+          0.25,
+          0.2508530914783478,
+          0.24912847578525543
+        ],
+        "size": [
+          0.5,
+          0.502,
+          0.498
+        ]
+      }
+    },
+    {
+      "id": "obj_crack_slab_parts",
+      "out": "models/obj_crack_slab_parts.glb",
+      "before": 9491372,
+      "after": 487440,
+      "statsIn": {
+        "tris": 24766,
+        "meshes": 10,
+        "materials": 10,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 10
+      },
+      "statsOut": {
+        "tris": 24766,
+        "meshes": 10,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 10
+      },
+      "bounds": {
+        "min": [
+          -0.25,
+          -0.2508530914783478,
+          -0.24912847578525543
+        ],
+        "max": [
+          0.25,
+          0.2508530914783478,
+          0.24912847578525543
+        ],
+        "size": [
+          0.5,
+          0.502,
+          0.498
+        ]
+      }
+    },
+    {
+      "id": "env_kiln",
+      "out": "models/env_kiln.glb",
+      "before": 8260360,
+      "after": 463172,
+      "statsIn": {
+        "tris": 24856,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 24856,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.6000000238418579,
+          -0.40085718035697937,
+          -0.5919669270515442
+        ],
+        "max": [
+          0.6000000238418579,
+          0.40085718035697937,
+          0.5919669270515442
+        ],
+        "size": [
+          1.2,
+          0.802,
+          1.184
+        ]
+      }
+    },
+    {
+      "id": "env_workbench",
+      "out": "models/env_workbench.glb",
+      "before": 7878832,
+      "after": 479992,
+      "statsIn": {
+        "tris": 27496,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 27496,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.6000000238418579,
+          -0.461241751909256,
+          -0.3468814790248871
+        ],
+        "max": [
+          0.6000000238418579,
+          0.461241751909256,
+          0.3468814790248871
+        ],
+        "size": [
+          1.2,
+          0.922,
+          0.694
+        ]
+      }
+    },
+    {
+      "id": "env_pillar",
+      "out": "models/env_pillar.glb",
+      "before": 7682620,
+      "after": 433072,
+      "statsIn": {
+        "tris": 25544,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 25544,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.3147871792316437,
+          -0.8999999761581421,
+          -0.3083948791027069
+        ],
+        "max": [
+          0.3147871792316437,
+          0.8999999761581421,
+          0.3083948791027069
+        ],
+        "size": [
+          0.63,
+          1.8,
+          0.617
+        ]
+      }
+    },
+    {
+      "id": "env_arch",
+      "out": "models/env_arch.glb",
+      "before": 8172712,
+      "after": 514896,
+      "statsIn": {
+        "tris": 23232,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 23232,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -1.4497976303100586,
+          -1.5,
+          -0.6975429058074951
+        ],
+        "max": [
+          1.4497976303100586,
+          1.5,
+          0.6975429058074951
+        ],
+        "size": [
+          2.9,
+          3,
+          1.395
+        ]
+      }
+    },
+    {
+      "id": "env_crate",
+      "out": "models/env_crate.glb",
+      "before": 10140716,
+      "after": 408224,
+      "statsIn": {
+        "tris": 25326,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 25326,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.30000001192092896,
+          -0.28307637572288513,
+          -0.2858981192111969
+        ],
+        "max": [
+          0.30000001192092896,
+          0.28307637572288513,
+          0.2858981192111969
+        ],
+        "size": [
+          0.6,
+          0.566,
+          0.572
+        ]
+      }
+    },
+    {
+      "id": "env_emitter",
+      "out": "models/env_emitter.glb",
+      "before": 7158980,
+      "after": 288508,
+      "statsIn": {
+        "tris": 27022,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 27022,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.09262239933013916,
+          -0.1599999964237213,
+          -0.09238996356725693
+        ],
+        "max": [
+          0.09262239933013916,
+          0.1599999964237213,
+          0.09238996356725693
+        ],
+        "size": [
+          0.185,
+          0.32,
+          0.185
+        ]
+      }
+    },
+    {
+      "id": "env_lantern",
+      "out": "models/env_lantern.glb",
+      "before": 11096520,
+      "after": 382812,
+      "statsIn": {
+        "tris": 27632,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 27632,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.09066732972860336,
+          -0.17499999701976776,
+          -0.09025511890649796
+        ],
+        "max": [
+          0.09066732972860336,
+          0.17499999701976776,
+          0.09025511890649796
+        ],
+        "size": [
+          0.181,
+          0.35,
+          0.181
+        ]
+      }
+    },
+    {
+      "id": "env_tree",
+      "out": "models/env_tree.glb",
+      "before": 10008564,
+      "after": 813748,
+      "statsIn": {
+        "tris": 30894,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 30894,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.798397421836853,
+          -0.8999999761581421,
+          -0.7381615042686462
+        ],
+        "max": [
+          0.798397421836853,
+          0.8999999761581421,
+          0.7381615042686462
+        ],
+        "size": [
+          1.597,
+          1.8,
+          1.476
+        ]
+      }
+    },
+    {
+      "id": "env_rocks",
+      "out": "models/env_rocks.glb",
+      "before": 8227764,
+      "after": 297312,
+      "statsIn": {
+        "tris": 26812,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 26812,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.22499999403953552,
+          -0.17880313098430634,
+          -0.2217603474855423
+        ],
+        "max": [
+          0.22499999403953552,
+          0.17880313098430634,
+          0.2217603474855423
+        ],
+        "size": [
+          0.45,
+          0.358,
+          0.444
+        ]
+      }
+    },
+    {
+      "id": "env_mushrooms",
+      "out": "models/env_mushrooms.glb",
+      "before": 8432804,
+      "after": 318408,
+      "statsIn": {
+        "tris": 27086,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 27086,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.11489171534776688,
+          -0.10999999940395355,
+          -0.08602090179920197
+        ],
+        "max": [
+          0.11489171534776688,
+          0.10999999940395355,
+          0.08602090179920197
+        ],
+        "size": [
+          0.23,
+          0.22,
+          0.172
+        ]
+      }
+    },
+    {
+      "id": "env_gear",
+      "out": "models/env_gear.glb",
+      "before": 10478144,
+      "after": 521340,
+      "statsIn": {
+        "tris": 26406,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 26406,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.05999999865889549,
+          -0.06002283841371536,
+          -0.014124860055744648
+        ],
+        "max": [
+          0.05999999865889549,
+          0.06002283841371536,
+          0.014124860055744648
+        ],
+        "size": [
+          0.12,
+          0.12,
+          0.028
+        ]
+      }
+    },
+    {
+      "id": "env_statue",
+      "out": "models/env_statue.glb",
+      "before": 7774652,
+      "after": 454312,
+      "statsIn": {
+        "tris": 27660,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 27660,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.07811542600393295,
+          -0.125,
+          -0.06977251917123795
+        ],
+        "max": [
+          0.07811542600393295,
+          0.125,
+          0.06977251917123795
+        ],
+        "size": [
+          0.156,
+          0.25,
+          0.14
+        ]
+      }
+    },
+    {
+      "id": "env_wall",
+      "out": "models/env_wall.glb",
+      "before": 8321720,
+      "after": 535580,
+      "statsIn": {
+        "tris": 25990,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 25990,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.7479289174079895,
+          -0.75,
+          -0.21344202756881714
+        ],
+        "max": [
+          0.7479289174079895,
+          0.75,
+          0.21344202756881714
+        ],
+        "size": [
+          1.496,
+          1.5,
+          0.427
+        ]
+      }
+    },
+    {
+      "id": "env_scaffold",
+      "out": "models/env_scaffold.glb",
+      "before": 9734000,
+      "after": 660184,
+      "statsIn": {
+        "tris": 30450,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 30450,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -1.3241816759109497,
+          -2.25,
+          -0.9015257954597473
+        ],
+        "max": [
+          1.3241816759109497,
+          2.25,
+          0.9015257954597473
+        ],
+        "size": [
+          2.648,
+          4.5,
+          1.803
+        ]
+      }
+    },
+    {
+      "id": "cr_colossus",
+      "out": "models/cr_colossus.glb",
+      "before": 8846884,
+      "after": 641612,
+      "statsIn": {
+        "tris": 44432,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 44432,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "1024x1024",
+          "1024x1024"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.1254948228597641,
+          -0.125,
+          -0.08032556623220444
+        ],
+        "max": [
+          0.1254948228597641,
+          0.125,
+          0.08032556623220444
+        ],
+        "size": [
+          0.251,
+          0.25,
+          0.161
+        ]
+      }
+    },
+    {
+      "id": "cr_colossus_anim",
+      "out": "models/colossus_slam.json",
+      "before": 21089572,
+      "after": 1006904,
+      "links": [
+        "base",
+        "head",
+        "right_arm"
+      ],
+      "joints": [
+        "head_joint:revolute",
+        "right_arm_joint:revolute"
+      ]
+    },
+    {
+      "id": "cr_moth",
+      "out": "models/cr_moth.glb",
+      "before": 7037032,
+      "after": 169240,
+      "statsIn": {
+        "tris": 9418,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "2048x2048",
+          "2048x2048"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "statsOut": {
+        "tris": 9418,
+        "meshes": 1,
+        "materials": 1,
+        "textures": [
+          "512x512",
+          "512x512"
+        ],
+        "skins": 0,
+        "joints": 0,
+        "animations": [],
+        "nodes": 2
+      },
+      "bounds": {
+        "min": [
+          -0.32477813959121704,
+          -0.205280140042305,
+          -0.125
+        ],
+        "max": [
+          0.32477813959121704,
+          0.205280140042305,
+          0.125
+        ],
+        "size": [
+          0.65,
+          0.411,
+          0.25
+        ]
+      }
+    },
+    {
+      "id": "cr_moth_anim",
+      "out": "models/moth_flap.json",
+      "before": 17977544,
+      "after": 673720,
+      "links": [
+        "body",
+        "left_wing",
+        "right_wing"
+      ],
+      "joints": [
+        "left_wing_joint:revolute",
+        "right_wing_joint:revolute"
+      ]
+    },
+    {
+      "id": "world_hall",
+      "out": "pano_hall.jpg",
+      "after": 1238573
+    },
+    {
+      "id": "world_valley",
+      "out": "pano_valley.jpg",
+      "after": 1039894
+    },
+    {
+      "id": "world_valley/splats",
+      "out": "world_valley.spz",
+      "after": 8120047
+    }
+  ],
+  "problems": []
+}

@@ -1,0 +1,57 @@
+{
+ "type": "urdf",
+ "root": "base",
+ "links": {
+  "base": "models/colossus_slam_base.glb",
+  "head": "models/colossus_slam_head.glb",
+  "right_arm": "models/colossus_slam_right_arm.glb"
+ },
+ "joints": [
+  {
+   "name": "head_joint",
+   "type": "revolute",
+   "parent": "base",
+   "child": "head",
+   "xyz": [
+    -0.0104,
+    0.2183,
+    0.0415
+   ],
+   "rpy": [
+    0,
+    0,
+    0
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "lower": -0.523599,
+   "upper": 0.523599
+  },
+  {
+   "name": "right_arm_joint",
+   "type": "revolute",
+   "parent": "base",
+   "child": "right_arm",
+   "xyz": [
+    0.0573,
+    0.1845,
+    0.0017
+   ],
+   "rpy": [
+    0,
+    0,
+    0
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "lower": -0.523599,
+   "upper": 0.523599
+  }
+ ]
+}

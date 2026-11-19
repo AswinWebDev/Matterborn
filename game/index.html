@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matterborn</title>
+    <meta name="description" content="Matterborn: a cinematic 3D puzzle-platformer where a small clay golem changes what the world is made of. Built with Aholo Lux3D." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+
+    <div id="letterbox-top" class="letterbox"></div>
+    <div id="letterbox-bottom" class="letterbox"></div>
+
+    <div id="hud">
+      <div id="forms" class="hidden"></div>
+      <div id="hint"></div>
+      <div id="toast"></div>
+    </div>
+
+    <div id="story"></div>
+    <div id="titlecard"></div>
+    <div id="skip"><span>Hold Enter to skip</span><div class="track"><div id="skip-bar"></div></div></div>
+
+    <div id="title" class="hidden">
+      <div class="logo">MATTERBORN</div>
+      <div class="tagline">Become what the world needs</div>
+      <div class="press">Press Enter or click to begin</div>
+      <div id="archive-btn">Press <b>G</b> for the Maker's Archive · every Aholo model in the game</div>
+      <div class="controls">
+        <div><b>W A S D</b> or <b>arrow keys</b> move</div>
+        <div><b>Space</b> jump · double jump · wall jump</div>
+        <div><b>Shift</b> dash · as Stone: charge</div>
+        <div><b>1 – 4</b> or <b>Q</b> change material</div>
+        <div><b>E</b> pass your material to a block</div>
+        <div><b>C</b> in mid-air as Stone: pound</div>
+        <div><b>Esc</b> pause menu</div>
+      </div>
+      <div class="made">Every character, creature, prop and material generated with <b>Aholo Lux3D</b></div>
+    </div>
+
+    <div id="pause" class="hidden">
+      <div class="panel">
+        <div class="ptitle">Paused</div>
+        <button id="resume">Resume</button>
+        <button id="skipscene">Skip scene</button>
+        <button id="restart">Back to last shrine</button>
+        <button id="mute">Sound: on</button>
+        <button id="gfx">Graphics: Auto</button>
+        <button id="fullscreen">Fullscreen</button>
+        <div class="controls small">
+          <div><b>WASD</b> move · <b>Space</b> jump · <b>Shift</b> dash / charge</div>
+          <div><b>1–4 / Q</b> change material · <b>E</b> imprint · <b>C</b> pound (Stone)</div>
+          <div><b>Esc</b> resume · gamepad supported · hold <b>Enter</b> to skip a cutscene</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="credits">
+      <div class="roll">
+        <div class="ctitle">MATTERBORN</div>
+        <p>A game made in a day for the Manycore Aholo Global 3D AI Hackathon</p>
+        <h3>3D generation</h3>
+        <p>Aholo Lux3D: text-to-3D, image-to-3D, material transfer,<br />humanoid auto-rig, animation retargeting, articulation, part split</p>
+        <h3>Worlds</h3>
+        <p>Aholo World: the Valley of Makers as a 3D Gaussian-splat backdrop, and the sky panoramas</p>
+        <h3>Voice, sound and music</h3>
+        <p>ElevenLabs: the narrator, Loam's voice, every sound effect, the ambience and the score</p>
+        <h3>Engine</h3>
+        <p>three.js · custom 3D physics · volumetric light, N8AO, Spark splats</p>
+        <p class="thanks">Thank you for playing</p>
+      </div>
+    </div>
+
+    <div id="fade"></div>
+    <div id="loading">
+      <div class="logo small">MATTERBORN</div>
+      <div class="bar"><div id="loading-bar"></div></div>
+      <div id="loading-text">Loading...</div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
