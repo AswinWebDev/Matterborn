@@ -11,6 +11,8 @@ _Updated 19 Nov 2026, 14:52 IST. **Deadline: 19 Nov 2026, 4:30 p.m. IST (6:00 a.
   CPU; full-window view `?mode=full`). Report regenerated with the play link (video: "in our X post") and copied to
   `deliverables/`. Not done: the X post and the form (the user does both). The user may report more bugs: fix,
   re-run routes, rebuild, rezip, and push the new `dist/` to the Studio (see "Hosting" below).
+- **Source** (15:07): public at https://github.com/AswinWebDev/Matterborn (`main`, pushed over SSH as AswinWebDev).
+  `.claude/`, `NEXT_SESSION_PROMPT.md` and the placeholder report are gitignored. The report links the X post.
 - The newest round ("Fifth playtest note") is directly below; the day's earlier rounds follow it.
 
 ## Hosting on ModelScope (19 Nov, 14:15–14:50 IST)

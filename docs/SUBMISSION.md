@@ -7,7 +7,7 @@ Everything the submission form and the X post need, in one place. Fill the `TODO
   view: https://modelscope.ai/studios/DarkArtsAsh/matterborn?mode=full). Click the game once so it gets the keyboard.
 - Demo video: `capture/teaser.mp4` (83 s, for X) and `capture/trailer.mp4` (113 s, full) — real gameplay captured
   frame by frame from the running game (re-record: see docs/STATUS.md). Upload one and paste the link here.
-- Source code: TODO (optional; repo or archive)
+- Source code: **https://github.com/AswinWebDev/Matterborn** (public)
 - Report: `deliverables/DarkArtsAsh + Matterborn.pdf` (play link filled in; video given as "in our X post"). Rebuild:
   `python3 docs/report/make_report.py "DarkArtsAsh" "<play link>" "<video link>"`, then copy it to `deliverables/`.
 
