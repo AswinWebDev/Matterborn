@@ -327,6 +327,7 @@ title('Under the hood, and how to play')
 text([
     'Engine: three.js r187, custom swept-box physics, postprocessing + N8AO, Spark (Gaussian splats), WebCodecs capture.',
     'Sound: ElevenLabs narration, effects, ambience and music (pipeline/eleven.mjs), mixed in Web Audio with voice ducking.',
+    "Code: written with Claude Code (Anthropic's AI coding assistant), directed, playtested and tuned by the team.",
     'Frame: scene → AO → height fog → volumetric sun → DOF → bloom, AgX tone map, grade → SMAA. ~2–3 ms at 1080p on an',
     'Apple-silicon laptop; quality steps down automatically on slower GPUs (or ?quality=low|medium|high).',
     'Testing: scripted routes for every puzzle and the full escape run headlessly through the debug API before release.',
@@ -334,14 +335,14 @@ text([
     "Maker's Archive (press G on the title screen): every Lux3D model on a turntable with its prompt, Aholo operation,",
     'triangle count and generation time; the rigged hero performs its retargeted clips, the colossus and moth their joints.',
 ], 40, H - 110, size=11.2, color=INK, lead=1.55)
-text(['Controls'], 40, H - 250, size=14, color=AMBER, font='Helvetica-Bold')
+text(['Controls'], 40, H - 280, size=14, color=AMBER, font='Helvetica-Bold')
 text([
     'W A S D or arrow keys move · Space jump (double jump, wall jump) · Shift dash / charge as Stone',
     '1–4 or Q change material · E pass your material to a block · C pound in mid-air as Stone · Esc pause',
     'Hold Enter to skip a cutscene · gamepad supported · desktop browser with WebGL 2, no install, no sign-in',
-], 40, H - 272, size=11.2, color=INK, lead=1.55)
-text(['Links'], 40, H - 350, size=14, color=AMBER, font='Helvetica-Bold')
-text([f'Play: {PLAY_LINK}   ·   Video: {VIDEO_LINK}   ·   X: #Manycorehackathon'], 40, H - 372, size=11.2, color=INK)
+], 40, H - 302, size=11.2, color=INK, lead=1.55)
+text(['Links'], 40, H - 378, size=14, color=AMBER, font='Helvetica-Bold')
+text([f'Play: {PLAY_LINK}   ·   Video: {VIDEO_LINK}   ·   X: #Manycorehackathon'], 40, H - 400, size=11.2, color=INK)
 footer(9)
 c.showPage()
 c.save()

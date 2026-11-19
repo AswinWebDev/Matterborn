@@ -13,6 +13,7 @@ Made by team **DarkArtsAsh** for the Manycore Aholo Global 3D AI Hackathon. #Man
   joints, the moths' wings) and part split (the cracked slabs).
 - **Aholo World**: the Valley of Makers as a 3D Gaussian-splat backdrop, and the sky panoramas.
 - Voice, sound and music: ElevenLabs. Engine: three.js with custom 3D physics.
+- Code: written with Claude Code (Anthropic's AI coding assistant), directed, playtested and tuned by the team.
 
 On the title screen, press **G** for the Maker's Archive: every Aholo-generated model in the game on a turntable.
 
